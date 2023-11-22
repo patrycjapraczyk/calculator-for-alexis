@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+    rel="stylesheet">
+  <title>Calculator</title>
+</head>
+<body>
+<div class="calculator">
+  <div class="display">
+    <div id="result">0</div>
+    <div id="expression"></div>
+  </div>
+  <div class="rows">
+    <div id="row-1" class="row">
+      <button data-key="Backspace" id="ac" class="btn option">AC</button>
+      <button data-key="Tab"       id="+/-" class="btn option">+/-</button>
+      <button data-key="%"         id="%" class="btn option">%</button>
+      <button data-key="/"         id="÷" class="btn operator">÷</button>
+    </div>
+    <div id="row-2" class="row">
+      <button data-key="7"         id="7" class="btn number">7</button>
+      <button data-key="8"         id="8" class="btn number">8</button>
+      <button data-key="9"         id="9" class="btn number">9</button>
+      <button data-key="*"         id="×" class="btn operator">×</button>
+    </div>
+    <div id="row-3" class="row">
+      <button data-key="4"         id="4" class="btn number">4</button>
+      <button data-key="5"         id="5" class="btn number">5</button>
+      <button data-key="6"         id="6" class="btn number">6</button>
+      <button data-key="-"         id="-" class="btn operator">-</button>
+    </div>
+    <div id="row-4" class="row">
+      <button data-key="1"         id="1" class="btn number">1</button>
+      <button data-key="2"         id="2" class="btn number">2</button>
+      <button data-key="3"         id="3" class="btn number">3</button>
+      <button data-key="+"         id="+" class="btn operator">+</button>
+    </div>
+    <div id="row-5" class="row">
+      <button data-key="0"         id="0" class="btn number">0</button>
+      <button data-key="."         id="." class="btn number">.</button>
+      <button data-key="Enter"     id="=" class="btn operator">=</button>
+      <button data-key="Dead"      id="^" class="btn operator">^</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
