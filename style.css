@@ -1,0 +1,177 @@
+/*CSS Boilerplate */
+* {
+    border: none;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%; /* (62.5/100) * 16px = 10px */
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  body {
+    background: #121A20;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /*Colorization*/
+  #result {
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    text-transform: uppercase;
+  }
+  
+  #expression {
+    color: white;
+  }
+  
+  .btn {
+    color: white;
+    border-radius: 40%;
+    box-shadow: 3px 3px 3px black;
+  }
+  
+  .btn:focus {
+    transition: background-color 0.3s ease;
+  }
+  
+  .number {
+    background: lightgrey;
+    color: black;
+  }
+  
+  .number:focus {
+    background: black;
+    color: lightgrey;
+  }
+  
+  .option {
+    background: lightcoral;
+    color: black;
+  }
+  
+  .option:focus {
+    background: black;
+    color: lightcoral;
+  }
+  
+  .operator {
+    background: lightblue;
+    color: black;
+  }
+  
+  .operator:focus {
+    background: black;
+    color: lightblue;
+  }
+  
+  #ac {
+    background: lightcoral;
+    color: black;
+  }
+  
+  #\= {
+    background: orange;
+    color: black;
+  }
+  
+  #\=:focus {
+    background: black;
+    color: orange;
+  }
+  
+  /*Responsiveness*/
+  body {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 5vh;
+  }
+  
+  @media (min-width: 1024px) {
+    body {
+      justify-content: center;
+    }
+  }
+  
+  .display {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 1vw;
+  }
+  
+  #result {
+    font-size: clamp(2rem, 1rem + 6vh, 14rem);
+    max-height: clamp(2rem, 1rem + 6vh, 14rem);
+  }
+  
+  #expression {
+    font-size: clamp(1rem, .5rem + 3vh, 7rem);
+    min-height: clamp(1rem, 1rem + 3vh, 7rem);
+  }
+  
+  .btn {
+    padding: clamp(0.25rem, 0.25rem + 0.2vw, 10rem);
+    margin: clamp(0.25rem, 0.25rem + 0.2vw, 10rem);
+    width: clamp(2rem, 1rem + 7.5vh, 16rem);
+    height: clamp(1.25rem, 1rem + 7.5vh, 16rem);
+    font-size: clamp(1em, 0.25rem + 3.75vh, 8em);
+  }
+  
+  @media (hover: hover) {
+    .btn:hover {
+      transition: background-color 0.3s ease;
+    }
+  
+    .number:hover {
+      background: black;
+      color: lightgrey;
+    }
+  
+    .option:hover {
+      background: black;
+      color: lightcoral;
+    }
+  
+    .operator:hover {
+      background: black;
+      color: lightblue;
+    }
+  
+    #ac:hover {
+      background: black;
+      color: lightcoral;
+    }
+  
+    #\=:hover {
+      background: black;
+      color: orange;
+    }
+  }
+  
+  .footer {
+    color: white;
+  }
